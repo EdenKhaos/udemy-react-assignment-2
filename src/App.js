@@ -13,6 +13,10 @@ class App extends Component {
     this.setState({text: event.target.value});
   }
 
+  deleteCharHandler = () => {
+    const chars = 
+  }
+
   render() {
     return (
       <div className="App">
