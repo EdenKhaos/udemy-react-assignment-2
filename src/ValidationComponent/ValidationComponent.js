@@ -6,9 +6,17 @@ import React from 'react';
 
 const validationComponent = (props) => {
     if (props.text.length >= 5) {
-        return <p>Text long enough</p>
+        return (
+            <div>
+                <p>Text long enough</p>
+            </div>
+        )
     }
-    return <p>Text too short</p>
-}
+    return (
+        <div>
+            <p>Text too short</p>
+        </div>
+    );
+};
 
 export default validationComponent;
