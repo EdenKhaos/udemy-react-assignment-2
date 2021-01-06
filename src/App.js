@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CharComponent from './CharComponent/CharComponent';
+import ValidationComponent from './ValidationComponent/ValidationComponent';
+
 class App extends Component {
+  state = {
+    text: "Hello World!"
+  }
+
+  textHandler = (event) => {
+    this.setState({text: event.target.value});
+  }
+
   render() {
     return (
       <div className="App">
